@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class UI_Manager : MonoBehaviour
 {
   public InteractableObject activeIO;
-  public HinweisManager manageHinweis;
   public Text dialogFenster;
   public void DisplayText()
   {
@@ -22,6 +21,5 @@ public class UI_Manager : MonoBehaviour
     activeIO.img.sprite = activeIO.sr.sprite;
     activeIO.img.preserveAspect = true;
     activeIO.collectEvidence.Invoke();
-    manageHinweis.CountUp();
   }
 }
